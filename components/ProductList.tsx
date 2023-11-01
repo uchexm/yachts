@@ -30,8 +30,8 @@ const ProductList: React.FC<ProductListProps> = ({ items, itemsPerPage }) => {
   return (
     <div className=" py-6 px-8 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-        {currentItems.map((item) => (
-          <ProductCard key={item.id} data={item} />
+        {currentItems.map((item, index) => (
+          <ProductCard key={index} data={item} />
         ))}
       </div>
       <div className="flex justify-between">

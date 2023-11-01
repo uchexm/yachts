@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Header from "../components/ui/Header";
-import { Button } from "@/components/ui/button";
 import ProductList from "@/components/ProductList";
 import products from "./yachtData";
 

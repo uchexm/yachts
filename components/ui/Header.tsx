@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="flex justify-between py-3 px-4">
       <div className="mx-auto w-full max-w-7xl">
-        <p>Results: {yachtData.length} yachts</p>{" "}
+        <p className="ml-4">Results: {yachtData.length} yachts</p>{" "}
       </div>
       <div className="mx-6 flex items-center space-x-4 lg:space-x-6">
         <div className="flex items-center">

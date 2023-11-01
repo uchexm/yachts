@@ -5,18 +5,16 @@ import { Product } from "@/types";
 
 interface ProductListProps {
   items: Product[];
-  itemsPerPage: number; // Number of items to display per page
+  itemsPerPage: number;
 }
 
 const ProductList: React.FC<ProductListProps> = ({ items, itemsPerPage }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Calculate the indexes for the items to display on the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, items.length);
   const currentItems = items.slice(startIndex, endIndex);
 
-  // Handle page navigation
   const nextPage = () => {
     if (endIndex < items.length) {
       setCurrentPage(currentPage + 1);

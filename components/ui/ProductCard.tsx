@@ -30,6 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
               src={`https://picsum.photos/seed/picsum/200/300`}
               alt="Yacht"
               fill
+              loading="lazy"
               className="aspect-square object-cover rounded-lg transition-all duration-300 hover:scale-105"
             />
             {isFavorite && (
@@ -55,13 +56,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
               Fuel Type: {data.fuel_type}
             </p>
             <p className="text-sm text-primary/80">
-              <Bed /> Number of Cabins: {data.number_of_cabins}
+              <Bed style={{ color: "green" }} /> Number of Cabins:{" "}
+              {data.number_of_cabins}
             </p>
             <p className="text-sm text-primary/80">
               <Star /> Rating: {data.rating}
             </p>
             <p className="text-sm text-primary/80">
-              <Users /> Pax: {data.pax}
+              <Users style={{ color: "green" }} /> Pax: {data.pax}
             </p>
             <div className="flex items-center justify-between">
               Price: R{data?.price}

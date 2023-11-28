@@ -9,7 +9,6 @@
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
   - [👥 Author ](#-author-)
@@ -63,11 +62,13 @@ The application is licensed under the MIT License.
 
 To get a local copy up and running, follow these steps:
 
-- Create a local directory where you can clone the project
+- Create a local directory/folder where you can clone the project
 - Clone the project to your directory by running these commands.
   - `git clone https://github.com/uchexm/yachts.git`
 - `cd yachts`
+- `npm install`
 - `npm run dev`
+- and navigate to http://localhost:3000/ from your browser.
 
 ### Prerequisites
 
@@ -77,14 +78,6 @@ In order to run this project you need:
 - Node
 - Npm
 - Browser
-
-### Setup
-
-Clone this repository to your desired folder:
-
-- Create a local directory where you can clone the project
-- Clone the project to your directory by running
-  - `git clone https://github.com/uchexm/yachts.git`
 
 ### Install
 

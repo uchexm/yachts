@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -41,10 +40,23 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
           </div>
         </CardContent>
         <CardFooter className="flex items-start justify-between">
-          <div>
-            <p className="font-semibold text-lg">
-              Yacht Name: {data.yacht_name}
-            </p>
+          <div className="w-full">
+            <div className="flex items-center justify-between w-full">
+              <p className="font-semibold text-lg">
+                Yacht Name: {data.yacht_name}
+              </p>
+              {isFavorite && (
+                <>
+                  <div className="flex justify-end">
+                    <Users style={{ marginLeft: "0.5rem", color: "green" }} />
+                    <span>{data.pax}</span>
+
+                    <Bed style={{ marginLeft: "0.5rem", color: "green" }} />
+                    <span>{data.number_of_cabins}</span>
+                  </div>
+                </>
+              )}
+            </div>
             <p className="text-sm text-primary/80">
               Manufacturer: {data.manufacturer}
             </p>
@@ -55,18 +67,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
             <p className="text-sm text-primary/80">
               Fuel Type: {data.fuel_type}
             </p>
-            <p className="text-sm text-primary/80">
-              <Bed style={{ color: "green" }} /> Number of Cabins:{" "}
-              {data.number_of_cabins}
-            </p>
-            <p className="text-sm text-primary/80">
-              <Star /> Rating: {data.rating}
-            </p>
-            <p className="text-sm text-primary/80">
-              <Users style={{ color: "green" }} /> Pax: {data.pax}
-            </p>
-            <div className="flex items-center justify-between">
-              Price: R{data?.price}
+
+            <div className="flex items-center justify-between w-full">
+              <p>
+                From
+                <span className="font-semibold text-lg"> ${data.price}</span> /
+                week
+              </p>
+              <div className="flex justify-end">
+                <Star style={{ marginLeft: "0.5rem" }} />
+                <span>{data.rating}</span>
+              </div>
             </div>
           </div>
         </CardFooter>

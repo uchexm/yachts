@@ -3,11 +3,17 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Yacht Listing ](#-yacht-listing-)
+- [🚢 Yacht Listing ](#-yacht-listing-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
   - [📐 Design and Architecture](#-design-and-architecture)
   - [🤔 What could be done differently](#-what-could-be-done-differently)
   - [🤝 Contributing ](#-contributing-)
@@ -17,7 +23,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Yacht Listing <a name="about-project"></a>
+# 🚢 Yacht Listing <a name="about-project"></a>
 
 **Yacht Listings** This is a Next.js/React application that leverages Shadcn's Tailwind/Radix library to provide an immersive yacht listings experience. Built as a take-home assignment for a reputable company based in Cape Town, the Yacht Listings App offers a sleek and user-friendly interface for exploring a curated collection of yacht listings.
 The application is licensed under the MIT License.
@@ -45,7 +51,7 @@ The application is licensed under the MIT License.
 ### Key Features <a name="key-features"></a>
 
 - **Modern Design.**
-- **Fetching Data from API**
+- **Fetch data from API**
 - **Lazy Loading Images**
 - **Pagination**
 
@@ -55,7 +61,62 @@ The application is licensed under the MIT License.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-...
+To get a local copy up and running, follow these steps:
+
+- Create a local directory where you can clone the project
+- Clone the project to your directory by running these commands.
+  - `git clone https://github.com/uchexm/yachts.git`
+- `cd yachts`
+- `npm run dev`
+
+### Prerequisites
+
+In order to run this project you need:
+
+- A computer
+- Node
+- Npm
+- Browser
+
+### Setup
+
+Clone this repository to your desired folder:
+
+- Create a local directory where you can clone the project
+- Clone the project to your directory by running
+  - `git clone https://github.com/uchexm/yachts.git`
+
+### Install
+
+Install this project with:
+
+- GitHub Actions
+- Linters
+
+### Usage
+
+- Use this project as you wish as it is Licensed under MIT open Licenses
+
+## 👥 Author <a name="authors"></a>
+
+- -👤 **Uchechi Nwaka**
+
+- -- GitHub: [@uchexm](https://github.com/uchexm)
+
+  -- LinkedIn: [@nwakauc](https://www.linkedin.com/in/nwakauc/)
+
+  -- Twiter [@nwakauc](https://twitter.com/Nwakauc)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Improve UI**
+- [ ] **Add booking funcionality**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📐 Design and Architecture<a name="design-and-architecture"></a>
 
@@ -73,17 +134,25 @@ In future iterations of the application, I would consider dedicating more time t
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/uchexm/yachts/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-...
+If you like this project kindly leave a ⭐
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-...
+I would like to thank the Codeswop for giving me this opportunity and the great resources used.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
